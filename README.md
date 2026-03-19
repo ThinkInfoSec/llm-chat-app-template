@@ -23,14 +23,6 @@ This template demonstrates how to build an AI-powered chat interface using Cloud
 - 🔎 Built-in Observability logging
 <!-- dash-content-end -->
 
-## Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v18 or newer)
-- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/install-and-update/)
-- A Cloudflare account with Workers AI access
-
 ## How It Works
 
 ### Backend
@@ -40,6 +32,7 @@ The backend is built with Cloudflare Workers and uses the Workers AI platform to
 1. **API Endpoint** (`/api/chat`): Accepts POST requests with chat messages and streams responses
 2. **Streaming**: Uses Server-Sent Events (SSE) for real-time streaming of AI responses
 3. **Workers AI Binding**: Connects to Cloudflare's AI service via the Workers AI binding
+4. **Application Control API**: Connects to Security policies and monitoring for Safe AI usage
 
 ### Frontend
 
